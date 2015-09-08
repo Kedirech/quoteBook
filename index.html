@@ -1,0 +1,28 @@
+<!DOCTYPE = html>
+<html ng-app = "quoteBook">
+<head>
+  <title></title>
+  <link rel = "stylesheet" type = "text/css" href = "./app/styles/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+</head>
+<body ng-controller = "mainCtrl">
+  <input type = "text" placeholder = "Add new quote!" ng-model='newQuoteText'>
+  <input type = "text" placeholder = "Quotes author!" ng-model='newQuoteAuthor'>
+  <button ng-click="addQuote()"> Add Quote
+  </button>
+<div class = example-animate-container ng-cloak>
+  <p ng-repeat = "quote in quotes track by $index" class = 'quote animate-repeat' >
+
+    <i>&#8220</i>
+    <span class = 'text'>{{quote.text}}</span> <i>&#8221</i> <span class = 'author'> -- {{quote.author}}</span> <i class="fa fa-times-circle" ng-click = "deleteMe(quote.text)"></i> 
+    
+  </p>
+</div>
+
+    <script src = "app/js/angular-animate.js"></script>  <!-- -->
+  <script src = "app/js/app.js"></script>
+  <script src = "app/js/dataService.js"></script>
+  <script src = "app/js/mainCtrl.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body, html{
+  margin:0px;
+  background-color: mintcream;
+}
+
+.quote{
+  width:90%;
+  margin:0 auto;
+}
+
+.text {
+  color:#333333;
+}
+
+p{
+  position:relative;
+}
+
+.author{
+  font-variant: small-caps;
+  color:#666666;
+  text-align: right;
+}
+
+.fa-times-circle{
+  margin-left: 10px;
+  display: inline-block;
+}
+
+i{
+  font-size:25px;
+  font-family: cursive;
+}
+
+.quote:first-child{
+  padding-top: 10px;
+  margin-top: 0px;
+  border-top: 1px darkslategrey solid;
+  border-left: 1px saddlebrown solid;
+  border-right: 1px saddlebrown solid;
+  background-color: slategrey;
+}
+
+.quote{
+  padding:7px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom:1px saddlebrown solid;
+  border-left: 1px saddlebrown solid;
+  border-right: 1px saddlebrown solid;
+  margin-bottom: 2px;
+  box-shadow: 10px 10px 4px #888888;
+  padding-top: 20px;
+  margin-top: -20px;
+}
+
+.example-animate-container {
+
+}
+
+.animate-repeat {
+  
+
+}
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  transition:3s;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity:0;
+  max-height:0;
+  outline: 2px solid red;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height: auto;
+  padding:7px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom:1px saddlebrown solid;
+  border-left: 1px saddlebrown solid;
+  border-right: 1px saddlebrown solid;
+  margin-bottom: 2px;
+  box-shadow: 10px 10px 4px #888888;
+  padding-top: 20px;
+  margin-top: -20px;
+ 
+}
